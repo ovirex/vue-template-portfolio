@@ -1,0 +1,25 @@
+.sidebar-link.router-link-exact-active {
+    color: #ef5285;
+}
+
+/* Component transition */
+.fade-leave {
+    opacity: 1;
+}
+.fade-leave-active {
+    transition: opacity 300ms ease;
+}
+.fade-leave-to {
+    opacity: 0;
+}
+
+.fade-enter {
+    opacity: 0;
+}
+.fade-enter-active {
+    transition: opacity 300ms ease;
+    transition-delay: 300ms;
+}
+.fade-enter-to {
+    opacity: 1;
+}
