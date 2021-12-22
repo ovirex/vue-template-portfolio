@@ -24,4 +24,12 @@ export default {
     mounted: function () {
         this.navbarToggle();
     },
+    watch: {
+        $route(to, from) {
+            // react to route changes...
+            if ($(".sidebar, .page-holder").hasClass("active")) {
+                $(".sidebar, .page-holder").toggleClass("active");
+            }
+        },
+    },
 };
