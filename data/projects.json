@@ -1,16 +1,53 @@
 {
     "projects": [
         {
-            "title": "",
-            "short_description": "",
-            "long_description": "",
+            "id": 0,
+            "title": "So Ferrara",
+            "short_description": "A home decor brand for the eccentric and expressive millennial.",
+            "long_description": "From brand conceptualization to visual communication system development. Ferrara’s brand new luxury line for millennial audiences “So Ferrara”, mixes minimalism’s simpleness and cleanness with an expressive and brutalist way of communicating, daring the viewer to express themselves creatively through their home spaces.",
             "tags": [
-                ""
+                "Social Media Design",
+                "Web Design",
+                "Art Direction"
             ],
-            "thumbnail": "",
+            "thumbnail": "../img/soferrara/SF1.jpg",
             "images": {
-                "web": [],
-                "rrss": []
+                "web": [
+                    ""
+                ],
+                "rrss": [
+                    "../img/soferrara/SF1.jpg",
+                    "../img/soferrara/SF2.jpg",
+                    "../img/soferrara/SF3.jpg",
+                    "../img/soferrara/SF4.jpg",
+                    "../img/soferrara/SF5.jpg",
+                    "../img/soferrara/SF6.jpg"
+                ]
+            }
+        },
+        {
+            "id": 1,
+            "title": "So Ferrara 2",
+            "short_description": "A home decor brand for the eccentric and expressive millennial.",
+            "long_description": "From brand conceptualization to visual communication system development. Ferrara’s brand new luxury line for millennial audiences “So Ferrara”, mixes minimalism’s simpleness and cleanness with an expressive and brutalist way of communicating, daring the viewer to express themselves creatively through their home spaces.",
+            "tags": [
+                "Social Media Design",
+                "Web Design",
+                "Art Direction"
+            ],
+            "thumbnail": "../img/soferrara/SF1.jpg",
+            "images": {
+                "web": [
+                    ""
+                ],
+                "rrss": [
+                    "../img/soferrara/SF1.jpg",
+                    "../img/soferrara/SF2.jpg",
+                    "../img/soferrara/SF3.jpg",
+                    "../img/soferrara/SF4.jpg",
+                    "../img/soferrara/SF5.jpg",
+                    "../img/soferrara/SF6.jpg"
+                ]
             }
         }
     ]
