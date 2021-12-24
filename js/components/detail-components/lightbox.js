@@ -21,6 +21,7 @@ export default {
         addLightbox() {
             lightbox.option({
                 disableScrolling: true,
+                alwaysShowNavOnTouchDevices: true,
             });
         },
     },
