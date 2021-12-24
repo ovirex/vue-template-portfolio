@@ -10,16 +10,16 @@
                 "Web Design",
                 "Art Direction"
             ],
-            "thumbnail": "../img/soferrara/SF1.jpg",
+            "thumbnail": "./img/soferrara/SF1.jpg",
             "images": {
                 "web": [],
                 "rrss": [
-                    "../img/soferrara/SF1.jpg",
-                    "../img/soferrara/SF2.jpg",
-                    "../img/soferrara/SF3.jpg",
-                    "../img/soferrara/SF4.jpg",
-                    "../img/soferrara/SF5.jpg",
-                    "../img/soferrara/SF6.jpg"
+                    "./img/soferrara/SF1.jpg",
+                    "./img/soferrara/SF2.jpg",
+                    "./img/soferrara/SF3.jpg",
+                    "./img/soferrara/SF4.jpg",
+                    "./img/soferrara/SF5.jpg",
+                    "./img/soferrara/SF6.jpg"
                 ]
             }
         },
@@ -31,16 +31,16 @@
             "tags": [
                 "Social Media Design"
             ],
-            "thumbnail": "../img/soferrara/SF6.jpg",
+            "thumbnail": "./img/soferrara/SF6.jpg",
             "images": {
                 "web": [],
                 "rrss": [
-                    "../img/soferrara/SF1.jpg",
-                    "../img/soferrara/SF2.jpg",
-                    "../img/soferrara/SF3.jpg",
-                    "../img/soferrara/SF4.jpg",
-                    "../img/soferrara/SF5.jpg",
-                    "../img/soferrara/SF6.jpg"
+                    "./img/soferrara/SF1.jpg",
+                    "./img/soferrara/SF2.jpg",
+                    "./img/soferrara/SF3.jpg",
+                    "./img/soferrara/SF4.jpg",
+                    "./img/soferrara/SF5.jpg",
+                    "./img/soferrara/SF6.jpg"
                 ]
             }
         },
@@ -52,16 +52,16 @@
             "tags": [
                 "Web Design"
             ],
-            "thumbnail": "../img/soferrara/SF2.jpg",
+            "thumbnail": "./img/soferrara/SF2.jpg",
             "images": {
                 "web": [],
                 "rrss": [
-                    "../img/soferrara/SF1.jpg",
-                    "../img/soferrara/SF2.jpg",
-                    "../img/soferrara/SF3.jpg",
-                    "../img/soferrara/SF4.jpg",
-                    "../img/soferrara/SF5.jpg",
-                    "../img/soferrara/SF6.jpg"
+                    "./img/soferrara/SF1.jpg",
+                    "./img/soferrara/SF2.jpg",
+                    "./img/soferrara/SF3.jpg",
+                    "./img/soferrara/SF4.jpg",
+                    "./img/soferrara/SF5.jpg",
+                    "./img/soferrara/SF6.jpg"
                 ]
             }
         },
@@ -73,16 +73,16 @@
             "tags": [
                 "Art Direction"
             ],
-            "thumbnail": "../img/soferrara/SF4.jpg",
+            "thumbnail": "./img/soferrara/SF4.jpg",
             "images": {
                 "web": [],
                 "rrss": [
-                    "../img/soferrara/SF1.jpg",
-                    "../img/soferrara/SF2.jpg",
-                    "../img/soferrara/SF3.jpg",
-                    "../img/soferrara/SF4.jpg",
-                    "../img/soferrara/SF5.jpg",
-                    "../img/soferrara/SF6.jpg"
+                    "./img/soferrara/SF1.jpg",
+                    "./img/soferrara/SF2.jpg",
+                    "./img/soferrara/SF3.jpg",
+                    "./img/soferrara/SF4.jpg",
+                    "./img/soferrara/SF5.jpg",
+                    "./img/soferrara/SF6.jpg"
                 ]
             }
         }
