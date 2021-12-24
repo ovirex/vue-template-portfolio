@@ -14,8 +14,9 @@ const Home = {
 };
 
 const Detail = {
+    props: ["id"],
     template: `
-        <detail></detail>
+        <detail :id="id"></detail>
     `,
     components: {
         detail,
@@ -33,7 +34,7 @@ const About = {
 
 const routes = [
     { path: "/", component: Home },
-    { path: "/details", component: Detail },
+    { path: "/works/:id", component: Detail, props: true },
     { path: "/about", component: About },
 ];
 

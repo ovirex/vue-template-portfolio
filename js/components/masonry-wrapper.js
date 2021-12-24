@@ -1,5 +1,4 @@
 import gridItem from "../components/grid-item.js";
-import fetchData from "../fetchData.js";
 
 export default {
     template: `

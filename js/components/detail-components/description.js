@@ -1,10 +1,16 @@
 export default {
+    props: {
+        desc: {
+            type: String,
+        },
+        tags: {
+            type: Array,
+        },
+    },
     template: `
     <div class="col-lg-5 position-sticky">
         <h2>Idea</h2>
-        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-            laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p class="text-muted">{{desc}}</p>
         <div class="p-4 bg-light mb-5">
             <ul class="list-unstyled mb-0">
                 <li class="d-flex mb-2">
@@ -17,8 +23,9 @@ export default {
                 </li>
                 <li class="d-flex">
                     <h6 class="mb-0">Tags:</h6>
-                    <p class="ml-3 text-muted mb-0"><a class="reset-anchor mr-1" href="#">Art,</a><a class="reset-anchor mr-1"
-                        href="#">Branding,</a><a class="reset-anchor mr-1" href="#">Illustration,</a></p>
+                    <p class="ml-3 text-muted mb-0">
+                        <span v-html="joinTags()"></span>
+                    </p>
                 </li>
             </ul>
         </div>
@@ -36,4 +43,13 @@ export default {
         </ul>
     </div>
     `,
+    methods: {
+        joinTags: function () {
+            return this.tags
+                .map((tag) => {
+                    return `<a class="reset-anchor mr-1" href="#">${tag}`;
+                })
+                .join(",</a> ");
+        },
+    },
 };

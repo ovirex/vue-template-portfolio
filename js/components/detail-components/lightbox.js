@@ -1,11 +1,19 @@
 export default {
+    props: {
+        title: { type: String },
+        images: {
+            type: Array,
+        },
+    },
     template: `
     <div class="col-lg-7">
-        <a href="img/portfolio-3.jpg" data-lightbox="image-1" data-title="Tour de France">
-            <img class="img-fluid mb-4" src="img/portfolio-3.jpg" alt="">
-        </a>
-        <a href="img/portfolio-1.jpg" data-lightbox="image-1" data-title="Tour de France">
-            <img class="img-fluid mb-4" src="img/portfolio-1.jpg" alt="">
+        <a 
+            v-for="image in images" 
+            :href="image" 
+            data-lightbox="image-1" 
+            :data-title="title"
+        >
+            <img class="img-fluid mb-4" :src="image" alt="">
         </a>
     </div>
     `,
