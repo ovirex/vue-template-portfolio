@@ -34,6 +34,9 @@ const About = {
 
 const routes = [
     { path: "/", component: Home },
+    { path: "/social-media-design", component: Home },
+    { path: "/web-design", component: Home },
+    { path: "/art-direction", component: Home },
     { path: "/works/:id", component: Detail, props: true },
     { path: "/about", component: About },
 ];
