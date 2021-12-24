@@ -5,7 +5,7 @@ export default {
     template: `
     <div class="px-4 py-5">
         <div class="container-fluid">
-            <transition name="fade">
+            <transition name="fade" appear>
                 <router-view></router-view>
             </transition>
         </div>
