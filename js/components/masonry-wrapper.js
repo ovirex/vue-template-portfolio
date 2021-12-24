@@ -38,7 +38,7 @@ export default {
             });
         },
         fetchProjects: async function () {
-            await fetch("../../data/projects.json")
+            await fetch("../data/projects.json")
                 .then((data) => data.json())
                 .then((projectsJson) => {
                     this.projects = [...projectsJson.projects];
