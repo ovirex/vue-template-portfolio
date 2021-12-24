@@ -29,15 +29,53 @@
             "short_description": "A home decor brand for the eccentric and expressive millennial.",
             "long_description": "From brand conceptualization to visual communication system development. Ferrara’s brand new luxury line for millennial audiences “So Ferrara”, mixes minimalism’s simpleness and cleanness with an expressive and brutalist way of communicating, daring the viewer to express themselves creatively through their home spaces.",
             "tags": [
-                "Social Media Design",
-                "Web Design",
+                "Social Media Design"
+            ],
+            "thumbnail": "../img/soferrara/SF6.jpg",
+            "images": {
+                "web": [],
+                "rrss": [
+                    "../img/soferrara/SF1.jpg",
+                    "../img/soferrara/SF2.jpg",
+                    "../img/soferrara/SF3.jpg",
+                    "../img/soferrara/SF4.jpg",
+                    "../img/soferrara/SF5.jpg",
+                    "../img/soferrara/SF6.jpg"
+                ]
+            }
+        },
+        {
+            "id": 2,
+            "title": "So Ferrara 3",
+            "short_description": "A home decor brand for the eccentric and expressive millennial.",
+            "long_description": "From brand conceptualization to visual communication system development. Ferrara’s brand new luxury line for millennial audiences “So Ferrara”, mixes minimalism’s simpleness and cleanness with an expressive and brutalist way of communicating, daring the viewer to express themselves creatively through their home spaces.",
+            "tags": [
+                "Web Design"
+            ],
+            "thumbnail": "../img/soferrara/SF2.jpg",
+            "images": {
+                "web": [],
+                "rrss": [
+                    "../img/soferrara/SF1.jpg",
+                    "../img/soferrara/SF2.jpg",
+                    "../img/soferrara/SF3.jpg",
+                    "../img/soferrara/SF4.jpg",
+                    "../img/soferrara/SF5.jpg",
+                    "../img/soferrara/SF6.jpg"
+                ]
+            }
+        },
+        {
+            "id": 3,
+            "title": "So Ferrara 4",
+            "short_description": "A home decor brand for the eccentric and expressive millennial.",
+            "long_description": "From brand conceptualization to visual communication system development. Ferrara’s brand new luxury line for millennial audiences “So Ferrara”, mixes minimalism’s simpleness and cleanness with an expressive and brutalist way of communicating, daring the viewer to express themselves creatively through their home spaces.",
+            "tags": [
                 "Art Direction"
             ],
-            "thumbnail": "../img/soferrara/SF1.jpg",
+            "thumbnail": "../img/soferrara/SF4.jpg",
             "images": {
-                "web": [
-                    ""
-                ],
+                "web": [],
                 "rrss": [
                     "../img/soferrara/SF1.jpg",
                     "../img/soferrara/SF2.jpg",
