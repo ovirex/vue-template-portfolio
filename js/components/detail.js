@@ -26,7 +26,7 @@ export default {
     },
     methods: {
         fetchProject: function () {
-            fetch("../../data/projects.json")
+            fetch("./data/projects.json")
                 .then((data) => data.json())
                 .then((projectsJson) => {
                     let projectInfo = projectsJson.projects.filter(
