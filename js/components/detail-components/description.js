@@ -24,7 +24,7 @@ export default {
                 <li class="d-flex">
                     <h6 class="mb-0">Tags:</h6>
                     <p class="ml-3 text-muted mb-0">
-                        <span v-html="joinTags()"></span>
+                        <component :is="tagElements"></component>
                     </p>
                 </li>
             </ul>
@@ -43,13 +43,41 @@ export default {
         </ul>
     </div>
     `,
+    data: () => ({
+        tagElements: {},
+    }),
     methods: {
         joinTags: function () {
-            return this.tags
+            let tagBtns = this.tags
                 .map((tag) => {
-                    return `<a class="reset-anchor mr-1" href="#">${tag}`;
+                    /**
+                     * The link variable has to match with the paths available in the routes
+                     */
+                    let link = this.tagLink(tag);
+                    let isLinkValid = this.verifyRoutes(`/${link}`);
+
+                    return `<router-link class="reset-anchor" to="/${
+                        isLinkValid ? link : ""
+                    }">${tag}</router-link>`;
                 })
-                .join(",</a> ");
+                .join(", ");
+
+            tagBtns = `<span>${tagBtns}</span>`;
+
+            return {
+                template: tagBtns,
+            };
         },
+        tagLink: function (tagString) {
+            return tagString.toLowerCase().split(" ").join("-");
+        },
+        verifyRoutes: function (link) {
+            return this.$router.options.routes.some((route) => {
+                return route.path === link;
+            });
+        },
+    },
+    created: function () {
+        this.tagElements = this.joinTags();
     },
 };

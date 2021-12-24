@@ -33,7 +33,6 @@ export default {
                         (project) => project.id === parseInt(this.id)
                     );
                     this.projectData = projectInfo[0];
-                    console.log(this.projectData.tags);
                 })
                 .catch((err) => {
                     console.error(err);
