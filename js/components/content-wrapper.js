@@ -6,7 +6,7 @@ export default {
     <div class="px-4 py-5">
         <div class="container-fluid">
             <transition name="fade" appear>
-                <router-view></router-view>
+                <router-view :key="$route.path"></router-view>
             </transition>
         </div>
     </div>
