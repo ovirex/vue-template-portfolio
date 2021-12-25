@@ -2,6 +2,10 @@
     color: #ef5285;
 }
 
+.list-inline-item {
+    margin-bottom: 0.5rem;
+}
+
 /* Component transition */
 .fade-leave {
     opacity: 1;
