@@ -15,4 +15,17 @@ export default {
         gridItem,
         masonryWrapper,
     },
+    methods: {
+        backToTop: function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+            });
+        },
+    },
+    watch: {
+        $route(to, from) {
+            this.backToTop();
+        },
+    },
 };
