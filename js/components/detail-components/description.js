@@ -30,7 +30,7 @@ export default {
             </ul>
         </div>
         <h2 class="h3 mb-4">Share</h2>
-        <ul class="list-inline">
+        <ul class="list-inline space-below">
             <li class="list-inline-item">
                 <a class="reset-anchor social-share-link facebook" href="#"><i class="fab fa-facebook-f mr-2"></i>Share</a>
             </li>
