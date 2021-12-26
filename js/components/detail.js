@@ -12,7 +12,7 @@ export default {
             </div>
         </div>
         <div class="row mb-5">
-            <lightbox :title="projectData.title" :images="projectData.images.rrss"></lightbox>
+            <lightbox :title="projectData.title" :images="projectData.images"></lightbox>
             <detail-description :desc="projectData.long_description" :tags="projectData.tags"></detail-description>
         </div>
     </div>
