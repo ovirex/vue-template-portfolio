@@ -18,7 +18,18 @@ export default {
     </div>
     `,
     data: () => ({
-        projectData: {},
+        projectData: {
+            id: 0,
+            title: "",
+            short_description: "",
+            long_description: "",
+            tags: [],
+            thumbnail: "",
+            images: {
+                web: [],
+                rrss: [],
+            },
+        },
     }),
     components: {
         detailDescription,
