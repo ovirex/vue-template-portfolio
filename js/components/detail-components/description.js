@@ -24,7 +24,7 @@ export default {
                 <li class="d-flex">
                     <h6 class="mb-0">Tags:</h6>
                     <p class="ml-3 text-muted mb-0">
-                        <component :is="tagElements"></component>
+                        <component :is="joinTags"></component>
                     </p>
                 </li>
             </ul>
@@ -43,12 +43,9 @@ export default {
         </ul>
     </div>
     `,
-    data: () => ({
-        tagElements: {},
-    }),
-    methods: {
+    computed: {
         joinTags: function () {
-            let tagBtns = this.tags
+            let tagsButtonsTemplate = this.tags
                 .map((tag) => {
                     /**
                      * The link variable has to match with the paths available in the routes
@@ -62,12 +59,14 @@ export default {
                 })
                 .join(", ");
 
-            tagBtns = `<span>${tagBtns}</span>`;
+            tagsButtonsTemplate = `<span>${tagsButtonsTemplate}</span>`;
 
             return {
-                template: tagBtns,
+                template: tagsButtonsTemplate,
             };
         },
+    },
+    methods: {
         tagLink: function (tagString) {
             return tagString.toLowerCase().split(" ").join("-");
         },
@@ -76,8 +75,5 @@ export default {
                 return route.path === link;
             });
         },
-    },
-    created: function () {
-        this.tagElements = this.joinTags();
     },
 };
