@@ -2,7 +2,7 @@ export default {
     props: {
         title: { type: String },
         images: {
-            type: Array,
+            type: Object,
         },
     },
     template: `
@@ -15,14 +15,28 @@ export default {
         >
             <img class="img-fluid mb-4" :src="image" alt="">
         </a>-->
-        <a 
-            v-for="image in images"
-            :href="image"
-            data-gallery="gallery"
-            class="glightbox"
-        >
-            <img class="img-fluid mb-4" :src="image" alt="image" />
-        </a>
+        <div v-if="images.rrss.length > 0">
+            <h3>Social Media Design</h3>
+            <a 
+                v-for="image in images.rrss"
+                :href="image"
+                data-gallery="rrss-gallery"
+                class="glightbox"
+            >
+                <img class="img-fluid mb-4" :src="image" alt="image" />
+            </a>
+        </div>
+        <div v-if="images.web.length > 0">
+            <h3>Web Design</h3>
+            <a 
+                v-for="image in images.web"
+                :href="image"
+                data-gallery="web-gallery"
+                class="glightbox"
+            >
+                <img class="img-fluid mb-4" :src="image" alt="image" />
+            </a>
+        </div>
     </div>
     `,
     methods: {
@@ -38,7 +52,7 @@ export default {
             });
         },
     },
-    mounted: function () {
+    updated: function () {
         this.addGLightbox();
     },
 };
