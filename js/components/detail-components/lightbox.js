@@ -45,7 +45,6 @@ export default {
         this.addGLightbox();
     },
     destroyed: function () {
-        console.log(this.lightbox);
         this.lightbox.close();
     },
 };
