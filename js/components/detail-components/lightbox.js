@@ -7,14 +7,6 @@ export default {
     },
     template: `
     <div class="col-lg-7">
-        <!--<a 
-            v-for="image in images" 
-            :href="image" 
-            data-lightbox="image-1" 
-            :data-title="title"
-        >
-            <img class="img-fluid mb-4" :src="image" alt="">
-        </a>-->
         <div v-if="images.rrss.length > 0">
             <h3>Social Media Design</h3>
             <a 
@@ -39,20 +31,21 @@ export default {
         </div>
     </div>
     `,
+    data: () => ({
+        lightbox: {},
+    }),
     methods: {
-        addLightbox() {
-            lightbox.option({
-                disableScrolling: true,
-                alwaysShowNavOnTouchDevices: true,
-            });
-        },
         addGLightbox() {
-            const lightbox = GLightbox({
+            this.lightbox = GLightbox({
                 zoomable: false,
             });
         },
     },
     updated: function () {
         this.addGLightbox();
+    },
+    destroyed: function () {
+        console.log(this.lightbox);
+        this.lightbox.close();
     },
 };
