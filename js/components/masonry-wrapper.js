@@ -21,7 +21,7 @@ export default {
     methods: {
         masonryDistribution: function (reload = false) {
             this.$nextTick(function () {
-                var $grid = $(".masonry-wrapper");
+                let $grid = $(".masonry-wrapper");
                 if (!reload) {
                     $grid.masonry({
                         itemSelector: ".grid-item",
@@ -29,7 +29,13 @@ export default {
                         percentPosition: true,
                         transitionDuration: 300,
                     });
-                    $grid.imagesLoaded().progress(function () {
+                    $grid.imagesLoaded().progress(function (imgLoad, image) {
+                        let $item = $(image.img).parent();
+                        $item.removeClass("is-loading");
+                        if (!image.isLoaded) {
+                            $item.addClass("is-broken");
+                        }
+
                         $grid.masonry();
                     });
                 } else {
@@ -85,7 +91,6 @@ export default {
     created: function () {
         this.filterProjectsAccordingToPath();
     },
-
     watch: {
         $route(to, from) {
             // react to route changes...
