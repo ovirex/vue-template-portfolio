@@ -10,6 +10,11 @@ a.listing-img-holder {
     min-height: 150px;
 }
 
+a.glightbox {
+    min-height: 300px;
+    position: relative;
+}
+
 /* Component transition */
 .fade-leave {
     opacity: 1;
@@ -47,8 +52,11 @@ a.listing-img-holder {
     background-color: #be3730;
     background-repeat: no-repeat;
     background-position: center;
+    display: block;
+    margin-bottom: 1.5rem;
 }
 
+.is-loading,
 .is-loading .lds-spinner {
     display: block;
 }
