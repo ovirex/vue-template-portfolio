@@ -13,6 +13,9 @@ export default {
                             <p class="text-small mb-0"><span class="text-muted">Template designed by </span><a
                                 href="https://bootstraptemple.com/p/minimal-bootstrap-creative-portfolio"
                                 class="reset-anchor">Bootstrap Temple</a></p>
+                            <p class="text-small mb-0"><span class="text-muted">Site developed by </span><a
+                            href="https://welikeperas.com"
+                            class="reset-anchor" target="blank">WeLikePeras</a></p>
                         </div>
                     </div>
                 </div>
